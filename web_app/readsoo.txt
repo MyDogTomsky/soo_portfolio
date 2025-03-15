@@ -2,4 +2,18 @@
 #### leave the updates content briefly!
 
 # [MARCH]
-## 08: UPLOAD THE WEB FILES + CONNECT TO JENKINS
+## 08: UPLOAD THE WEB FILES to GitHub
+## 09: JENKINS CONFIGURATION: Registered PAT KEY ON Jenkins(Issued By GitHub)
+## 10: DOCKER CONFIGURATION
+soo_portfolio/
+├── Dockerfile
+├── requirements.txt      
+├── web_app/
+    ├── app.py
+    ├── static/
+    └── templates/
+
+## 11: PREPARATION RESOURCE & NETWORK CONFIGURATION USING TERRAFORM
+## 12: TERRAFORM PLAN & APPLY / Problems: ALB HTTP LISTENERS
+## 13: TERRAFORM PLAN & APPLY / -> Resolved!
+## 15: 
