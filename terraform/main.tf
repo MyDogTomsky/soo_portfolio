@@ -120,9 +120,16 @@ resource "aws_security_group" "sg_soo_web" {
   }
 }
 
-resource "aws_vpc_security_group_ingress_rule" "web_in_ssh" {
+resource "aws_vpc_security_group_ingress_rule" "web_in_flask" {
   security_group_id = aws_security_group.sg_soo_web.id
   cidr_ipv4         = var.vpc_cidr_block
+  from_port         = 5000
+  ip_protocol       = "tcp"
+  to_port           = 5000
+}
+resource "aws_vpc_security_group_ingress_rule" "web_in_ssh" {
+  security_group_id = aws_security_group.sg_soo_web.id
+  cidr_ipv4         = var.out_all_traffic
   from_port         = 22
   ip_protocol       = "tcp"
   to_port           = 22
@@ -143,6 +150,7 @@ resource "aws_vpc_security_group_ingress_rule" "web_in_https" {
   ip_protocol       = "tcp"
   to_port           = 443
 }
+
 resource "aws_vpc_security_group_egress_rule" "web_out_traffic" {
   security_group_id = aws_security_group.sg_soo_web.id
   cidr_ipv4         = var.out_all_traffic
@@ -208,6 +216,11 @@ resource "aws_lb_target_group" "soo_alb_tg" {
   }
 }
 
+resource "aws_lb_target_group_attachment" "ec2_target_attach" {
+  target_group_arn = aws_lb_target_group.soo_alb_tg.arn
+  target_id        = aws_instance.web_ec2.id
+  port             = 80
+}
 # overall lb target group check
 
 resource "aws_lb" "soo_alb" {

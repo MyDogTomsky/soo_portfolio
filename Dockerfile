@@ -8,7 +8,7 @@ COPY requirements.txt .
 # PACKAGE INSTALL
 RUN pip install --no-cache-dir -r requirements.txt
 
-# ENV MOTE TO WORKDIR
+# ENV MOVE TO WORKDIR
 COPY web_app /app
 
 # Open PORT for Flask

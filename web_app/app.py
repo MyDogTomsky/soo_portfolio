@@ -43,6 +43,11 @@ def work():
 def work_single():
     return render_template('work-single.html')
 
+# ALB: Target Group Health Check 
+@app.route("/health")
+def health():
+    return "OK", 200
+
 # execute Flask app
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=False)
