@@ -11,6 +11,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # ENV MOVE TO WORKDIR
 COPY web_app /app
 
+# SYNC IMAGE FROM github TO docker through jenkins
+COPY web_app/static/images /app/static/images
+
 # Open PORT for Flask
 EXPOSE 5000
 
