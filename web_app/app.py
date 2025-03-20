@@ -1,8 +1,7 @@
 # Flask SETUP for A bootstrap file
 from flask import Flask, render_template
 
-#app = Flask(__name__)
-app = Flask(__name__, static_folder="static", static_url_path="/static")
+app = Flask(__name__, static_url_path="/static")
 
 # Homepage
 @app.route('/')
