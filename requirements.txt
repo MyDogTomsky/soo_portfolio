@@ -1,3 +1,5 @@
-Flask
+flask
 boto3
 requests
+
+flask-assets

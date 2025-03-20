@@ -3,24 +3,25 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Noah Template</title>
+	<title>Soo Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+	<meta name="description" content="This is SooYoung's Personal Website" />
+	<meta name="keywords" content="cloud project, engineer, sooyoung" />
+	<meta name="author" content="SooYoung" />
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
+  <!-- Github and Linkedin integration(facebook, twitter) -->
+	<meta property="og:title" content="Soo's Github REPO"/>
 	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+	<meta property="og:url" content="https://github.com/MyDogTomsky"/>
+	<meta property="og:site_name" content="GITHUB"/>
+	<meta property="og:description" content="LET'S LOOK AROUND CODES AND PROJECTS!"/>
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<meta name="linkedin:title" content="Soo's LinkedIn" />
+	<meta name="linkedin:image" content="" />
+	<meta name="linkedin:url" content="https://www.linkedin.com/in/soo-young-kwon-3045b026a/" />
+	<meta name="linkedin:card" content="" />
+
+	<!-- ICON: Place favicon.ico and apple-touch-icon.png in the root directory --> 
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
@@ -42,7 +43,8 @@
 	
 
 	<!-- Modernizr JS -->
-	<script src="{{url_for('static', filename = 'js/modernizr-2.6.2.min.js')}}"></script>
+	<script src="{{url_for('static', filename = 'js/modernizr-2.8.3.min.js')}}"></script>
+	<!--script src="{{url_for('static', filename = 'js/modernizr-2.6.2.min.js')}}"></script-->
 	<!--script src="js/modernizr-2.6.2.min.js"></script-->
 
 	<!-- FOR IE9 below -->
@@ -69,7 +71,7 @@
 					<div class="col-md-12">
 						<ul>
 							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="services.html">Services</a></li>
+							<li><a href="services.html">Skills</a></li>
 							<li><a href="work.html">Work</a></li>
 							<li><a href="blog.html">Blog</a></li>
 							<li><a href="about.html">About</a></li>
@@ -120,10 +122,10 @@
 					<div class="col-md-5 animate-box">
 						<div class="owl-carousel3">
 							<div class="item">
-								<img class="img-responsive about-img" src="images/about.jpg" alt="html5 bootstrap template by colorlib.com">
+								<img class="img-responsive about-img" src="{{ url_for('static', filename='images/about.jpg')}}", alt="html5 bootstrap template by colorlib.com">
 							</div>
 							<div class="item">
-								<img class="img-responsive about-img" src="images/about-2.jpg" alt="html5 bootstrap template by colorlib.com">
+								<img class="img-responsive about-img" src="{{ url_for('static', filename='images/about-2.jpg')}}", alt="html5 bootstrap template by colorlib.com">
 							</div>
 						</div>
 					</div>
@@ -139,16 +141,16 @@
 							</div>
 							<div class="desc">
 								<div class="rotate">
-									<h2 class="heading">About</h2>
+									<h2 class="heading">HELLO</h2>
 								</div>
-								<p>Welcome! This is my <a href="#"> Portfolio Web Page.</a> First of all, thank you for visiting! Here, I introduce my professional work and share a bit about myself. Hope you enjoy exploring my page!</p>
+								<p>Welcome! This is my <a href="#"> Portfolio Web Page.</a><br>First of all, thank you for visiting!<br>Here, I introduce my professional work and share a bit about myself.<br>Hope you enjoy exploring my page!</p>
 								<p class="colorlib-social-icons">
-									<a href="#"><i class="icon-facebook4"></i></a>
-									<a href="#"><i class="icon-twitter3"></i></a>
-									<a href="#"><i class="icon-googleplus"></i></a>
-									<a href="#"><i class="icon-dribbble2"></i></a>
+									<a href="https://github.com/MyDogTomsky"><i class="icon-github-soo"></i></a>
+									<a href="https://www.linkedin.com/in/soo-young-kwon-3045b026a/"><i class="icon-linkedin-soo"></i></a>
+									<a href="mailto:youngandtom2@gmail.com"><i class="icon-mail-soo"></i></a>
+									<!--a href="#"><i class="icon-dribbble2"></i></a-->
 								</p>
-								<p><a href="#" class="btn btn-primary btn-outline">Contact Me!</a></p>
+								<p><a href="mailto:youngandtom2@gmail.com" class="btn btn-primary btn-outline">Contact Me!</a></p>
 							</div>
 						</div>
 					</div>
@@ -158,7 +160,8 @@
 		<div id="colorlib-services">
 			<div class="container">
 				<div class="row text-center">
-					<h2 class="bold">Services</h2>
+					<h2 class="bold">Skills</h2>
+					<!--h2 class="bold">Services</h2-->
 				</div>
 				<div class="row">
 					<div class="col-md-12">
@@ -166,59 +169,64 @@
 							<div class="one-third">
 								<div class="row">
 									<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
-										<span>My Services</span>
-										<h2>Here Are Some of My Skills</h2>
+										<span>My Skills</span>
+										<h2>What Can I Bring...!</h2>
+										<!--span>My Services</span-->
+										<!--h2>Here Are Some of My Skills</h2-->
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-12">
 										<div class="rotate">
-											<h2 class="heading">Services</h2>
+											<h2 class="heading">Skills</h2>
+											<!--h2 class="heading">Services</h2-->
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="services animate-box">
-											<h3>1 - Graphic Design</h3>
+											<h3>1 - Programming</h3>
 											<ul>
-												<li>UI Design</li>
-												<li>Website &amp; Digital Design</li>
+												<li>Python</li>
+												<li>SQL: MySQL, SQLite</li>
+												<!--li>Website &amp; Digital Design</li>
 												<li>Brading &amp; Visual Identity</li>
-												<li>Print Design</li>
+												<li>Print Design</li-->
 											</ul>
 										</div>
 										<div class="services animate-box">
-											<h3>3 - Front End Development</h3>
+											<h3>3 - DevOps: CI/CD</h3>
 											<ul>
-												<li>HTML / CSS</li>
-												<li>JS &amp; Jquery Startup</li>
-												<li>WordPress</li>
-												<li>Jomla</li>
+												<li>Docker</li>
+												<li>Jenkins</li>
+												<li>Git: GitHub</li>
+												<!--li>Jomla</li-->
 											</ul>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="services animate-box">
-											<h3>2 - Illustration</h3>
+											<h3>2 - Cloud and Infrastructure</h3>
 											<ul>
-												<li>Editorial</li>
-												<li>Narrative</li>
-												<li>Motion Graphics</li>
-												<li>Animation</li>
-												<li>Visual Effects</li>
+												<li>Terraform</li>
+												<li>Cloud Service: AWS</li>
+												<li>Linux</li>
+												<!--li>Animation</li>
+												<li>Visual Effects</li-->
 											</ul>
 										</div>
-										<div class="services animate-box">
+										<!--div class="services animate-box">
 											<h3>4 - Web Marketing</h3>
 											<ul>
 												<li>Sales Marketing</li>
 												<li>Invoice</li>
 												<li>eCommerce</li>
 											</ul>
-										</div>
+										</div-->
 									</div>
 								</div>
 							</div>
-							<div class="one-forth services-img" style="background-image: url(images/services-img-1.jpg);">
+							<div class="one-forth services-img" style="background-image: url('{{ url_for('static', filename='images/skills-img-1.jpg')}}');">
+							<!--div class="one-forth services-img" style="background-image: url(images/services-img-1.jpg);"-->
 							</div>
 						</div>
 					</div>

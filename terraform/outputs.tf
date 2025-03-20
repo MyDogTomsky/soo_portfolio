@@ -68,3 +68,8 @@ output "dns_record" {
     value = aws_route53_record.root_domain.name
     description = "DNS record"
 }
+
+output "eip_ip" {
+    value = aws_eip.ec2_eip.public_ip
+    description = "EC2 EIP'S Public IP:"
+}

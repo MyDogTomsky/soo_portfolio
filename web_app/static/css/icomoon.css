@@ -3834,3 +3834,15 @@
 .icon-world2:before {
   content: "\ed91";
 }
+
+.icon-github-soo:before {
+  content: "\e96e";
+}
+
+.icon-linkedin-soo:before {
+  content: "\e982"
+}
+
+.icon-mail-soo:before {
+  content: "\e988"
+}
