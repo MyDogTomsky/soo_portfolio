@@ -199,8 +199,6 @@ resource "aws_s3_bucket_policy" "s3_static_policy" {
 }
 
 # LOAD BALANCER SETTING
-
-
 resource "aws_lb_target_group" "soo_alb_tg" {
   name     = "soo-alb-target-group-com"
   port     = 80
@@ -248,7 +246,6 @@ resource "aws_lb" "soo_alb" {
     Name = "soo-alb"
   }
 }
-
 
 # [HTTPS:ALB]
 resource "aws_lb_listener" "https_to_alb" {
