@@ -2,11 +2,13 @@
 from flask import Flask, render_template
 
 app = Flask(__name__, static_folder="static", static_url_path="/static")
+modify_part = "https://d2x7rfuwi5c2f3.cloudfront.net/system-images/current-working.jpg"
+plan_part = "https://d2x7rfuwi5c2f3.cloudfront.net/system-images/latter-working.jpg"
 
 # Homepage
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('index.html',modifying = modify_part, planning = plan_part)
 
 # 'about.html'
 @app.route('/about')
@@ -41,7 +43,7 @@ def work():
 # 'work-single.html'
 @app.route('/work-single')
 def work_single():
-    return render_template('work-single.html')
+    return render_template('work-single.html', modifying = modify_part, planning = plan_part)
 
 # ALB: Target Group Health Check 
 @app.route("/health")

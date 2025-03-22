@@ -15,6 +15,14 @@ data "aws_ami" "soo_ec2_image" {
 
   owners = ["099720109477"] # Canonical
 }
+
+data "aws_s3_bucket" "soo_s3_bucket" {
+  bucket = "soo-s3-bucket-net"
+}
+data "aws_cloudfront_origin_access_identity" "cloudfront_oai" {
+  id = "ERQGU8IZJFMVU"
+}
+
 data "aws_elb_service_account" "main" {}
 # Load Balancer
 
@@ -22,10 +30,7 @@ data "aws_iam_policy_document" "soo_s3_policy" {
   statement {
     principals {
       type        = "AWS"
-      identifiers = [data.aws_elb_service_account.main.arn] # whom to use!
-      # TRY TO IAM USER -> IF NOT RESOURCE ARN
-      # LoadBalancer needs to access logs, too!
-      # If it's complicated, identifiers: [*]
+      identifiers = [data.aws_elb_service_account.main.arn, data.aws_cloudfront_origin_access_identity.cloudfront_oai.iam_arn] # whom to use!
     }
 
     actions = [
@@ -36,8 +41,8 @@ data "aws_iam_policy_document" "soo_s3_policy" {
     ]
 
     resources = [
-      aws_s3_bucket.soo_s3_bucket.arn,
-      "${aws_s3_bucket.soo_s3_bucket.arn}/*",
+      data.aws_s3_bucket.soo_s3_bucket.arn,
+      "${data.aws_s3_bucket.soo_s3_bucket.arn}/*",
     ]
   }
 }

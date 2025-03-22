@@ -51,8 +51,8 @@ output "ec2_spec" {
 
 output "s3_spec" {
     value = {
-        BUCKET_Name = aws_s3_bucket.soo_s3_bucket.bucket_domain_name
-        REGION = aws_s3_bucket.soo_s3_bucket.region
+        BUCKET_Name = data.aws_s3_bucket.soo_s3_bucket.bucket_domain_name
+        REGION = data.aws_s3_bucket.soo_s3_bucket.region
     }
     description = "S3 Brief Specification for VPC"
 }

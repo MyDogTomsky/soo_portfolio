@@ -72,10 +72,10 @@
 					<div class="col-md-12">
 						<ul>
 							<li class="active"><a href="/">Home</a></li>
-							<li><a href="#">Skills</a></li>
+							<li><a href="{{ modifying }}">Skills</a></li>
 							<li><a href="/work-single">Projects</a></li>
-							<li><a href="#">Coming Soon</a></li>
-							<li><a href="#">Coming Soon</a></li>
+							<li><a href="{{ planning }}">Coming Soon</a></li>
+							<li><a href="{{ planning }}">Coming Soon</a></li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</div>
@@ -84,17 +84,15 @@
 					<div class="col-md-12">
 						<h2 class="head-title">Projects</h2>
 						<a href="/work-single" class="gallery image-popup-link text-center" style="background-image: url(/static/images/code_blurred.png);">
-
-						<!--a href="images/work-1.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-1.jpg);"-->
 							<span><i class="icon-search3"></i></span>
 						</a>
-						<a href="#" class="gallery image-popup-link text-center" style="background-image: url(/static/images/serverless_program.jpg);">
+						<a href="{{ planning }}" class="gallery image-popup-link text-center" style="background-image: url(/static/images/serverless_program.jpg);">
 							<span><i class="icon-search3"></i></span>
 						</a>
-						<a href="#" class="gallery image-popup-link text-center" style="background-image: url(/static/images/lamp_program.jpg);">
+						<a href="{{ planning }}" class="gallery image-popup-link text-center" style="background-image: url(/static/images/lamp_program.jpg);">
 							<span><i class="icon-search3"></i></span>
 						</a>
-						<a href="#" class="gallery image-popup-link text-center" style="background-image: url(/static/images/mobile_program.jpg);">
+						<a href="{{ planning }}" class="gallery image-popup-link text-center" style="background-image: url(/static/images/mobile_program.jpg);">
 							<span><i class="icon-search3"></i></span>
 						</a>
 					</div>
@@ -256,7 +254,7 @@
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="#" class="work-img" style="background-image: url(/static/images/serverless_program.jpg);">
+							<a href="{{ planning }}" class="work-img" style="background-image: url(/static/images/serverless_program.jpg);">
 								<div class="display-t">
 									<div class="work-name">
 										<h2>Build Server-less App</h2>
@@ -266,14 +264,14 @@
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
 									<p>Using the AWS Lambda, implement the Unicorn location Tracking App. far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View Details</a></p>
+									<p class="read"><a href="{{ planning }}">View Details</a></p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="#" class="work-img" style="background-image: url(/static/images/lamp_program.jpg);">
+							<a href="{{ planning }}" class="work-img" style="background-image: url(/static/images/lamp_program.jpg);">
 								<div class="display-t">
 									<div class="work-name">
 										<h2>Host LAMP Web App</h2>
@@ -283,14 +281,14 @@
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
 									<p>What kind of AWS service?  far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View details</a></p>
+									<p class="read"><a href="{{ planning }}">View details</a></p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="#" class="work-img" style="background-image: url(/static/images/mobile_program.jpg);">
+							<a href="{{ planning }}" class="work-img" style="background-image: url(/static/images/mobile_program.jpg);">
 								<div class="display-t">
 									<div class="work-name">
 										<h2>Etc</h2>
@@ -300,7 +298,7 @@
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
 									<p>[1] Mobile App(Python,Kivy):, [2] MySQL Project(Tfl) </p>
-									<p class="read"><a href="#">View details</a></p>
+									<p class="read"><a href="{{ planning }}">View details</a></p>
 								</div>
 							</div>
 						</div>
@@ -451,12 +449,12 @@
 							<div class="row">
 								<div class="col-md-10">
 									<h2>Let's Talk</h2>
-									<p>Any thoughts, opinions,<br>or suggestions are welcome!<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm HERE!</p>
-									<p><a href="#">youngandtom2@gmail.com</a></p>
+									<p>Any thoughts, opinions,<br>or suggestions are welcome!<br><br>I'm HERE!</p>
+									<p><a href="mailto:youngandtom2@gmail.com">youngandtom2@gmail.com</a></p>
 									<p class="colorlib-social-icons">
-										<a href="#"><i class="icon-github2"></i></a>&nbsp;
-										<a href="#"><i class="icon-linkedin3"></i></a>&nbsp;
-										<a href="#"><i class="icon-mail5"></i></a>
+										<a href="https://github.com/MyDogTomsky"><i class="icon-github2"></i></a>&nbsp;
+										<a href="https://www.linkedin.com/in/soo-young-kwon-3045b026a/"><i class="icon-linkedin3"></i></a>&nbsp;
+										<a href="mailto:youngandtom2@gmail.com"><i class="icon-mail5"></i></a>
 									</p>
 								</div>
 							</div>
@@ -467,21 +465,21 @@
 								<a href="/work-single" class="featured-img" style="background-image: url(/static/images/img-1.jpg);"></a>
 								<div class="desc">
 									<span>March, 2025</span>
-									<h3><a href="#">Host this Website</a></h3>
+									<h3><a href="/work-single">Host this Website</a></h3>
 								</div>
 							</div>
 							<div class="f-entry">
 								<a href="#" class="featured-img" style="background-image: url(/static/images/img-2.jpg);"></a>
 								<div class="desc">
 									<span> 2024 </span>
-									<h3><a href="#">Build Server-less REST App</a></h3>
+									<h3><a href="{{ planning }}">Build Server-less REST App</a></h3>
 								</div>
 							</div>
 							<div class="f-entry">
 								<a href="#" class="featured-img" style="background-image: url(/static/images/img-3.jpg);"></a>
 								<div class="desc">
 									<span> 2024 </span>
-									<h3><a href="#">Host LAMP Web App</a></h3>
+									<h3><a href="{{ planning }}">Host LAMP Web App</a></h3>
 								</div>
 							</div>
 						</div>

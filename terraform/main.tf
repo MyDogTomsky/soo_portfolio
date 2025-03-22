@@ -185,17 +185,31 @@ resource "aws_instance" "web_ec2" {
 
 # vpc_security_group_ids, key_name, subnet_id, count
 
-resource "aws_s3_bucket" "soo_s3_bucket" {
-  bucket = "soo-s3-bucket-net"
-  tags = {
-    Name        = "soo_s3_bucket"
-  }
-  force_destroy = true
-}
+#resource "aws_s3_bucket" "soo_s3_bucket" {
+#  bucket = "soo-s3-bucket-net"
+#  tags = {
+#    Name        = "soo_s3_bucket"
+#  }
+#  force_destroy = true
+#}
 
 resource "aws_s3_bucket_policy" "s3_static_policy" {
-  bucket = aws_s3_bucket.soo_s3_bucket.id
+  bucket = data.aws_s3_bucket.soo_s3_bucket.id
   policy = data.aws_iam_policy_document.soo_s3_policy.json
+}
+
+resource "aws_s3_object" "obj_working" {
+  bucket = data.aws_s3_bucket.soo_s3_bucket.id
+  key    = "system-images/current-working.jpg"
+  source = "system-images/current-working.jpg"
+  #etag = filemd5("path/to/file")
+}
+
+resource "aws_s3_object" "obj_working_later" {
+  bucket = data.aws_s3_bucket.soo_s3_bucket.id
+  key    = "system-images/latter-working.jpg"
+  source = "system-images/current-working.jpg"
+  #etag = filemd5("path/to/file")
 }
 
 # LOAD BALANCER SETTING
@@ -236,7 +250,7 @@ resource "aws_lb" "soo_alb" {
   #enable_deletion_protection = true
 
   access_logs {
-    bucket  = aws_s3_bucket.soo_s3_bucket.id
+    bucket  = data.aws_s3_bucket.soo_s3_bucket.id
     prefix  = "logs-soo-alb"         # which key will be applied  
     enabled = true
   }
