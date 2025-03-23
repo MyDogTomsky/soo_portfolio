@@ -209,7 +209,7 @@ resource "aws_s3_object" "obj_working" {
 resource "aws_s3_object" "obj_working_later" {
   bucket = data.aws_s3_bucket.soo_s3_bucket.id
   key    = "system-images/latter-working.jpg"
-  source = "system-images/current-working.jpg"
+  source = "system-images/latter-working.jpg"
   content_type = "image/jpeg"
   #etag = filemd5("path/to/file")
 }
