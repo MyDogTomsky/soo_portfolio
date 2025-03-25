@@ -22,7 +22,7 @@ data "aws_s3_bucket" "soo_s3_bucket" {
 data "aws_cloudfront_origin_access_identity" "cloudfront_oai" {
   id = "ERQGU8IZJFMVU"
 }
-
+# HOLD 2 TLS: FOR CNAME(HTTP->HTTPS) & CLOUDFRONT(HTTP->HTTPS) 
 data "aws_elb_service_account" "main" {}
 # Load Balancer
 

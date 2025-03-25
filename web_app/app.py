@@ -10,6 +10,17 @@ plan_part = "https://d2x7rfuwi5c2f3.cloudfront.net/system-images/latter-working.
 def home():
     return render_template('index.html',modifying = modify_part, planning = plan_part)
 
+# 'work-single.html'
+@app.route('/work-single')
+def work_single():
+    return render_template('work-single.html', modifying = modify_part, planning = plan_part)
+
+
+# 'work-serverless.html'
+@app.rooute('/work-serverless')
+def work_serverless():
+    return render_template('work-serverless.html', modifying = modify_part, planning = plan_part)
+
 # 'about.html'
 @app.route('/about')
 def about():
@@ -40,10 +51,6 @@ def single():
 def work():
     return render_template('work.html')
 
-# 'work-single.html'
-@app.route('/work-single')
-def work_single():
-    return render_template('work-single.html', modifying = modify_part, planning = plan_part)
 
 # ALB: Target Group Health Check 
 @app.route("/health")

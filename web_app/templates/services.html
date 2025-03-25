@@ -389,5 +389,24 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/main.js"></script>
 
 	</body>
-</html>
 
+</html>
+[1 Mobile App]
+It's a food recommendation mobile application. The app is divided into Western food and Oriental food. It also offers a filtering system to exclude disliked or allergic ingredients for users. It fetches the recommended list in conjunction with starter, main and dessert. Through keyword search functionality, the user can see what the food looks like. And the user can send the feedback through review & claim section which is implemented by SMTP.
+
+[2 Serverless App]:
+[I implemented a serverless web application with a REST API architecture that processes requests using AWS Lambda and API Gateway, stores data in DynamoDB, and secures user authentication with AWS Cognito.]
+
+I built a serverless web application with REST API architecture, featuring map functionality and a simple structure.
+In this app, the user sends a request to summon a unicorn to a selected location on the map. The backend processes this request, fetches the unicorn data, and records both the request and its result in DynamoDB.
+At the initial stage of this project, I assigned appropriate policies to an IAM user and service roles to enable interaction between AWS resources.
+For user authentication, I created a user pool on AWS Cognito, and the login funcitonality was activated by configuring the cognito property in the window._config object of the config.js file. I added the user pool details (UserPoolID: UserPoolName, UserPoolClientID: AppClientName) as key-value pairs.
+I configured a DynamoDB table to store requests and their responses using UnicornID as the partition key. After preparing the DB and the authentication process, I built the REST API architecture by integrating AWS Lambda and API Gateway.
+AWS Lambda executes specific events when triggered. It uses a "handler" function consisting of the method's [event], metadata stored in [context], and a [return: Python] or [callback: JavaScript] to process results. To validate the functionality of the methods, tests are conducted to ensure the request is handled properly by checking the statusCode. For instance, success scenarios typically use codes like 200 and 201, while error handling scenarios represent statusCodes like 400, 401, and 500. In this web app, since the functionality involves both returning the response of request and recording them in DynamoDB, a 201 statusCode is used to confirm the method's performance.
+Examples of status codes:
+200: Success (e.g., HTTP GET or UPDATE) / 201: Success with resource creation (e.g., POST) // 301: Redirect Success // 
+400: Bad Request / 401: Unauthorized request blocked. / 403: Forbidden(insufficient permissions). / 404: Resource not found. / 500: Server Error
+
+After configuring AWS Lambda, API Gateway was set up to handle and route incoming requests. I enabled CORS to allow traffic exclusively from the web app and created an logical endpoints (e.g., /request). In the REST API endpoint, HTTP methods were defined to connect to specific Lambda functions. I created HTTP POST to implement the functionality involving data creation in DynamoDB and returning the response to the client. The Lambda Proxy Integration is used to ensure network security and proxy controls. By using authorization header, requests were restricted to authenticated users by verifying their JWT tokens through the specific user pool(AWS Cognito). 
+After deploying the API Gateway, the generated Invoke URL was added to the 'api' property of the 'window._config' object in the 'config.js' file. When a request is sent, the web app checks "window._config['api']['invokeUrl']" to locate the API Gateway. Based on the HTTP method, API Gateway verifies the 'Authorization' header and authenticates the request using the "window._config['cognito']['userPoolId']". If the user is valid, the API Gateway forwards the request to the connected Lambda function for processing.
+Through this project, I learnt the comprehensive REST API architecture. I built a HTTP POST method to implement a suggested functionality. Considering its scalable and flexible RESTful design, I can extend the system further by implementing the HTTP GET method to retrieve specific unicorn requests and responses from DynamoDB based on UnicornID.

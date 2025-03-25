@@ -185,13 +185,6 @@ resource "aws_instance" "web_ec2" {
 
 # vpc_security_group_ids, key_name, subnet_id, count
 
-#resource "aws_s3_bucket" "soo_s3_bucket" {
-#  bucket = "soo-s3-bucket-net"
-#  tags = {
-#    Name        = "soo_s3_bucket"
-#  }
-#  force_destroy = true
-#}
 
 resource "aws_s3_bucket_policy" "s3_static_policy" {
   bucket = data.aws_s3_bucket.soo_s3_bucket.id

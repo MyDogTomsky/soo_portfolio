@@ -73,8 +73,8 @@
 						<ul>
 							<li class="active"><a href="/">Home</a></li>
 							<li><a href="{{ modifying }}">Skills</a></li>
-							<li><a href="/work-single">Projects</a></li>
-							<li><a href="{{ planning }}">Coming Soon</a></li>
+							<li><a href="/work-single">About This Website</a></li>
+							<li><a href="/work-serverless">About Serverless App</a></li>
 							<li><a href="{{ planning }}">Coming Soon</a></li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
@@ -86,7 +86,7 @@
 						<a href="/static/images/web_diagram.png" class="gallery image-popup-link text-center" style="background-image: url(/static/images/code_blurred.png);">
 							<span><i class="icon-search3"></i></span>
 						</a>
-						<a href="{{ planning }}" class="gallery image-popup-link text-center" style="background-image: url(/static/images/serverless_program.jpg);">
+						<a href="/static/images/serverless-diagram.jpg" class="gallery image-popup-link text-center" style="background-image: url(/static/images/serverless_program.jpg);">
 							<span><i class="icon-search3"></i></span>
 						</a>
 						<a href="{{ planning }}" class="gallery image-popup-link text-center" style="background-image: url(/static/images/lamp_program.jpg);">
@@ -184,21 +184,22 @@
 											<h3>1 - Programming</h3>
 											<ul>
 												<li>Python</li>
-												<li>SQL</li>
 											</ul>
 										</div>
 										<div class="services animate-box">
-											<h3>3 - DevOps: CI/CD</h3>
+											<h3>3 - DevOps & Etc</h3>
 											<ul>
 												<li>Docker</li>
 												<li>Jenkins</li>
 												<li>Git: GitHub</li>
+												<li>SQL: MySQL</li>
+
 											</ul>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="services animate-box">
-											<h3>2 - Cloud and Infrastructure</h3>
+											<h3>2 - Cloud & Infrastructure</h3>
 											<ul>
 												<li>Terraform</li>
 												<li>Cloud Service: AWS</li>
@@ -224,7 +225,7 @@
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
 						<span>Portfolio</span>
-						<h2>What Did So Far..?</h2>
+						<h2>What Did I So Far..?</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -246,7 +247,7 @@
 							</a>
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
-									<p>Currently Adding: [QUOTES API]<br>With Terraform, Network Infrastructure & Resource are implemented. Flask is used as web framework. GitHub WebHook, Docker and Jenkis </p>
+									<p>Currently Adding: [WEATHER API]<br>With Terraform, Network Infrastructure & Resource are implemented. Flask is used as web framework. GitHub WebHook, Docker and Jenkis </p>
 									<p class="read"><a href="/work-single">View details</a></p>
 								</div>
 							</div>
@@ -254,7 +255,9 @@
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="{{ planning }}" class="work-img" style="background-image: url(/static/images/serverless_program.jpg);">
+							<a href="/work-serverless" class="work-img" style="background-image: url(/static/images/serverless_program.jpg);">
+							<!--a href="{{ planning }}" class="work-img" style="background-image: url(/static/images/serverless_program.jpg);"-->
+
 								<div class="display-t">
 									<div class="work-name">
 										<h2>Build Server-less App</h2>
@@ -264,7 +267,9 @@
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
 									<p>Using the AWS Lambda, implement the Unicorn location Tracking App. far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="{{ planning }}" class = "gallery image-popup-link text-center" >View Details</a></p>
+									<p class="read"><a href="/work-serverless" class = "gallery image-popup-link text-center" >View Details</a></p>
+									<!--p class="read"><a href="{{ planning }}" class = "gallery image-popup-link text-center" >View Details</a></p-->
+
 								</div>
 							</div>
 						</div>
@@ -291,13 +296,13 @@
 							<a href="{{ planning }}"  class="work-img" style="background-image: url(/static/images/mobile_program.jpg);">
 								<div class="display-t">
 									<div class="work-name">
-										<h2>Etc</h2>
+										<h2>Python Mobile App</h2>
 									</div>
 								</div>
 							</a>
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
-									<p>[1] Mobile App(Python,Kivy):, [2] MySQL Project(Tfl) </p>
+									<p>It's a food recommendation mobile application. The app is divided into Western and Oriental cuisines.<br>It also offers a filtering system to exclude disliked or allergenic ingredients for users. It fetches a recommended list that includes starters, mains, and desserts.<br>Through a keyword search function, users can see what the food looks like. Additionally, users can send feedback through the review & claim section, which is implemented using SMTP.</p>
 									<p class="read"><a href="{{ planning }}" class = "gallery image-popup-link text-center" > View details</a></p>
 								</div>
 							</div>
@@ -307,21 +312,21 @@
 			</div>
 		</div>
 
-		<!--div id="colorlib-blog">
+		<div id="colorlib-blog">
 			<div class="container">
 				<div class="row text-center">
-					<h2 class="bold">Weather:London,Seoul</h2>
+					<h2 class="bold">Weather</h2>
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-						<span>Blog</span>
-						<h2>Read Our Case</h2>
+						<span>Today's</span>
+						<h2>WORLD WEATHER</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="rotate">
-							<h2 class="heading">Our Blog</h2>
+							<h2 class="heading">Go Globe</h2>
 						</div>
 					</div>
 				</div>
@@ -330,11 +335,11 @@
 						<div class="item">
 							<div class="col-md-12">
 								<div class="article">
-									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/img-1.jpg" alt="html5 bootstrap by colorlib.com">
+									<a href="#" class="blog-img">
+										<img class="img-responsive" src="/static/images/london.jpg" alt="How's London weather like today?">
 										<div class="overlay"></div>
 										<div class="link">
-											<span class="read">Read more</h2>
+											<span class="read">Go LONDON!</h2>
 										</div>
 									</a>
 									<div class="desc">
@@ -349,10 +354,10 @@
 							<div class="col-md-12">
 								<div class="article">
 									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/img-2.jpg" alt="html5 bootstrap by colorlib.com">
+										<img class="img-responsive" src="/static/images/busan.jpg" alt="How's Busan weather like?">
 										<div class="overlay"></div>
 										<div class="link">
-											<span class="read">Read more</h2>
+											<span class="read">Go BUSAN!</h2>
 										</div>
 									</a>
 									<div class="desc">
@@ -367,10 +372,10 @@
 							<div class="col-md-12">
 								<div class="article">
 									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/img-3.jpg" alt="html5 bootstrap by colorlib.com">
+										<img class="img-responsive" src="/static/images/roma.jpg" alt="How's Roma weather like today?">
 										<div class="overlay"></div>
 										<div class="link">
-											<span class="read">Read more</h2>
+											<span class="read">Go ROMA!</h2>
 										</div>
 									</a>
 									<div class="desc">
@@ -384,9 +389,9 @@
 					</div>
 				</div>
 			</div>
-		</div-->
+		</div>
 
-		<div id="colorlib-testimony">
+		<!--div id="colorlib-testimony">
 			<div class="container">
 				<div class="row text-center">
 					<h2 class="bold">Quotes</h2>
@@ -439,7 +444,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div-->
 
 		<footer>
 			<div id="footer">

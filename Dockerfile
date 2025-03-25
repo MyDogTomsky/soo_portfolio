@@ -8,6 +8,8 @@ COPY requirements.txt .
 # PACKAGE INSTALL
 RUN pip install --no-cache-dir -r requirements.txt
 
+## zappa : init -> deploy -> update for LAMBDA
+
 # ENV MOVE TO WORKDIR
 COPY web_app /app
 
