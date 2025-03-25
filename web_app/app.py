@@ -16,10 +16,12 @@ def work_single():
     return render_template('work-single.html', modifying = modify_part, planning = plan_part)
 
 
-# 'work-serverless.html'
-@app.route('/work-serverless')
-def work_serverless():
-    return render_template('work-serverless.html', modifying = modify_part, planning = plan_part)
+# 'work-less.html'
+@app.route('/work-less')
+def work_less():
+
+    return "work-less is working!!!"
+    #return render_template('work-less.html', modifying = modify_part, planning = plan_part)
 
 # 'about.html'
 @app.route('/about')
