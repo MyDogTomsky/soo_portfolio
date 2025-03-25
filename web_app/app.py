@@ -19,9 +19,8 @@ def work_single():
 # 'work-less.html'
 @app.route('/work-less')
 def work_less():
-
-    return "work-less is working!!!"
-    #return render_template('work-less.html', modifying = modify_part, planning = plan_part)
+    #return "work-less is working!!!"
+    return render_template('work-less.html', modifying = modify_part, planning = plan_part)
 
 # 'about.html'
 @app.route('/about')
