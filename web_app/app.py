@@ -17,7 +17,7 @@ def work_single():
 
 
 # 'work-serverless.html'
-@app.rooute('/work-serverless')
+@app.route('/work-serverless')
 def work_serverless():
     return render_template('work-serverless.html', modifying = modify_part, planning = plan_part)
 
