@@ -84,7 +84,7 @@
 						<a href="/static/images/web_diagram.png" class="gallery image-popup-link text-center" style="background-image: url(/static/images/code_blurred.png);">
 							<span><i class="icon-search3"></i></span>
 						</a>
-						<a href="/static/images/web-serverless-diagram.jpg" class="gallery image-popup-link text-center" style="background-image: url(/static/images/serverless_program.jpg);">
+						<a href="/static/images/serverless-diagram.jpg" class="gallery image-popup-link text-center" style="background-image: url(/static/images/serverless_program.jpg);">
 							<span><i class="icon-search3"></i></span>
 						</a>
 						<a href="{{ planning }}" class="gallery image-popup-link text-center" style="background-image: url(/static/images/lamp_program.jpg);">
@@ -133,15 +133,19 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="/work-single" class="work-img" style="background-image: url(/static/images/web-serverless-diagram.jpg);">
+							<a href="/work-less" class="work-img" style="background-image: url(/static/images/serverless-diagram.jpg);">
 							</a>
+							<!--a href="/work-less" class="work-img" style="background-image: url(/static/images/web-serverless-diagram.jpg); background-size: contain; background-repeat: no-repeat; background-position: center;">
+							</a-->
 							<div class="col-md-8 col-md-offset-2">
 								<div class="desc">
 									<h2>Build a REST API Architecture </h2>
 									<p>I built a serverless web application with REST API architecture, featuring map functionality and a simple structure.<br>In this app, the user sends a request to summon a unicorn to a selected location on the map. The backend processes this request, fetches the unicorn data, and records both the request and its result in DynamoDB.<br>At the initial stage of this project, I assigned appropriate policies to an IAM user and service roles to enable interaction between AWS resources.</p>
 									<p>For user authentication, I created a user pool on AWS Cognito, and the login funcitonality was activated by configuring the cognito property in the window._config object of the config.js file. I added the user pool details (UserPoolID: UserPoolName, UserPoolClientID: AppClientName) as key-value pairs.<br>I configured a DynamoDB table to store requests and their responses using UnicornID as the partition key. <br>After preparing the DB and the authentication process, I built the REST API architecture by integrating AWS Lambda and API Gateway.</p>
 									<p>The AWS Lambda executes the events when the specific action is triggered. It uses a "handler" function consisting of the method's [event], metadata stored in [context], and a [return: Python] or [callback: JavaScript] to process results. To validate the functionality of the methods, tests are conducted to ensure the request is handled properly by checking the statusCode. For instance, success scenarios typically use codes like 200 and 201, while error handling scenarios represent statusCodes like 400, 401, and 500.<br>In this web app, since the functionality involves both returning the response of request and recording them in DynamoDB, a 201 statusCode is used to confirm the method's performance.</p>
-									<img class="img-responsive" src="/static/images/serverless-statuscode.jpg" alt="index.html of serverless web app"><br>
+									<img class="img-responsive" src="/static/images/serverless-statuscode.jpg" alt="index.html of serverless web app" style="display: block; margin: 0 auto;"><br>
+									<!--img class="img-responsive" src="/static/images/serverless-statuscode.jpg" alt="index.html of serverless web app"><br-->
+
 									<h2>Examples of status codes:</h2>
 									<p>200: Success (e.g., HTTP GET or UPDATE) / 201: Success with resource creation (e.g., POST)<br>301: Redirect Success<br>400: Bad Request / 401: Unauthorized request blocked. / 403: Forbidden(insufficient permissions). / 404: Resource not found.<br>500: Server Error</p>
 									<img class="img-responsive" src="/static/images/serverless_program.jpg" alt="index.html of serverless web app"><br>
