@@ -2,5 +2,4 @@ flask
 boto3
 requests
 
-flask-assets
-zappa
+#flask-assets
