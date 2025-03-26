@@ -2,6 +2,8 @@
 from flask import Flask, render_template
 from collections import defaultdict
 import requests
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 app = Flask(__name__, static_folder="static", static_url_path="/static")
 
@@ -36,7 +38,12 @@ def home():
             weather_data[city]["cur_temp"] = "-"
             weather_data[city]["it_is"]    = "-"
 
-    return render_template('index.html',modifying = modify_part, planning = plan_part, weather = weather_data)
+    date_data = dict()    
+    locations = {"Asia/Seoul","Europe/London","Europe/Rome"}
+    for location in locations:
+        dateis = datetime.now(ZoneInfo(location))
+        date_data[location] = dateis.strftime("%d. %b %Y").upper()
+    return render_template('index.html',modifying = modify_part, planning = plan_part, weather = weather_data, date = date_data)
 
 # 'work-single.html'
 @app.route('/work-single')
