@@ -2,3 +2,17 @@
 soo/
 # history
 .history/
+# Build shell script
+build.sh
+
+# Terraform credentials
+/terraform/variables.tf
+# Terraform History
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+*.plan
+terraform/.terraform.lock.hcl
+
+#personal study
+conf_network.py

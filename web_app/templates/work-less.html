@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Soo Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="This is SooYoung's Personal Website" />
+	<meta name="keywords" content="cloud project, engineer, sooyoung" />
+	<meta name="author" content="SooYoung" />
+
+  <!-- Github and Linkedin integration(facebook, twitter) -->
+	<meta property="og:title" content="Soo's Github REPO"/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="https://github.com/MyDogTomsky"/>
+	<meta property="og:site_name" content="GITHUB"/>
+	<meta property="og:description" content="LET'S LOOK AROUND CODES AND PROJECTS!"/>
+
+	<meta name="linkedin:title" content="Soo's LinkedIn" />
+	<meta name="linkedin:image" content="" />
+	<meta name="linkedin:url" content="https://www.linkedin.com/in/soo-young-kwon-3045b026a/" />
+	<meta name="linkedin:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!--link rel="shortcut icon" href="favicon.ico"-->
+	<link rel="shortcut icon" href="/static/images/tommy-cuttos.png" type="image/png">
+
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css')}}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/icomoon.css')}}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css')}}">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.default.min.css')}}">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/magnific-popup.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+
+	<!-- Modernizr JS -->
+	<script src="{{url_for('static', filename = 'js/modernizr-2.6.2.min.js')}}"></script>
+	<!--script src="{{url_for('static', filename = 'js/modernizr-2.6.2.min.js')}}"></script-->
+	<!--script src="js/modernizr-2.6.2.min.js"></script-->
+
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	</head>
+	<body>
+
+	<nav id="colorlib-main-nav" role="navigation">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+		<div class="js-fullheight colorlib-table">
+			<div class="colorlib-table-cell js-fullheight">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<input type="text" class="form-control" id="search" placeholder="Enter any key to search...">
+							<button type="submit" class="btn btn-primary"><i class="icon-search3"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<ul>
+							<li class="active"><a href="/">Home</a></li>
+							<li><a href="{{ modifying }}">Skills</a></li>
+							<li><a href="/work-single">About This Website</a></li>
+							<li><a href="/work-less">About Serverless App</a></li>
+							<li><a href="{{ planning }}">Coming Soon</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="head-title">Projects</h2>
+						<a href="/static/images/web_diagram.png" class="gallery image-popup-link text-center" style="background-image: url(/static/images/code_blurred.png);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="/static/images/serverless-diagram.jpg" class="gallery image-popup-link text-center" style="background-image: url(/static/images/serverless_program.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="{{ planning }}" class="gallery image-popup-link text-center" style="background-image: url(/static/images/lamp_program.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="/static/images/mobile_program.jpg" class="gallery image-popup-link text-center" style="background-image: url(/static/images/mobile-app.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a class="colorlib-logo" href="/"><span>CIAO-!</span><span>^__^</span></a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="colorlib-work">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">Projects</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<span>Portfolio</span>
+						<h2>Serverless Web App</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="rotate">
+							<h2 class="heading">System Design</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="work-entry animate-box">
+							<a href="/work-less" class="work-img" style="background-image: url(/static/images/serverless-diagram.jpg); background-size: contain; background-repeat: no-repeat; background-position: center;"></a>
+							<div class="col-md-8 col-md-offset-2">
+								<div class="desc">
+									<h2>Build a REST API Architecture </h2>
+									<p>I built a serverless web application with REST API architecture, featuring map functionality and a simple structure.<br>In this app, the user sends a request to summon a unicorn to a selected location on the map. The backend processes this request, fetches the unicorn data, and records both the request and its result in DynamoDB.<br>At the initial stage of this project, I assigned appropriate policies to an IAM user and service roles to enable interaction between AWS resources.</p>
+									<p>For user authentication, I created a user pool on AWS Cognito, and the login funcitonality was activated by configuring the cognito property in the window._config object of the config.js file. I added the user pool details (UserPoolID: UserPoolName, UserPoolClientID: AppClientName) as key-value pairs.<br>I configured a DynamoDB table to store requests and their responses using UnicornID as the partition key. <br>After preparing the DB and the authentication process, I built the REST API architecture by integrating AWS Lambda and API Gateway.</p>
+									<p>The AWS Lambda executes the events when the specific action is triggered. It uses a "handler" function consisting of the method's [event], metadata stored in [context], and a [return: Python] or [callback: JavaScript] to process results. To validate the functionality of the methods, tests are conducted to ensure the request is handled properly by checking the statusCode. For instance, success scenarios typically use codes like 200 and 201, while error handling scenarios represent statusCodes like 400, 401, and 500.<br>In this web app, since the functionality involves both returning the response of request and recording them in DynamoDB, a 201 statusCode is used to confirm the method's performance.</p>
+									<img class="img-responsive" src="/static/images/serverless-statuscode.jpg" alt="index.html of serverless web app" style="display: block; margin: 0 auto;"><br>
+									<!--img class="img-responsive" src="/static/images/serverless-statuscode.jpg" alt="index.html of serverless web app"><br-->
+
+									<h2>Examples of status codes:</h2>
+									<p>200: Success (e.g., HTTP GET or UPDATE) / 201: Success with resource creation (e.g., POST)<br>301: Redirect Success<br>400: Bad Request / 401: Unauthorized request blocked. / 403: Forbidden(insufficient permissions). / 404: Resource not found.<br>500: Server Error</p>
+									<img class="img-responsive" src="/static/images/serverless_program.jpg" alt="index.html of serverless web app"><br>
+									<p>After configuring AWS Lambda, API Gateway was set up to handle and route incoming requests. I enabled CORS to allow traffic exclusively from the web app and created an logical endpoints (e.g., /request). In the REST API endpoint, HTTP methods were defined to connect to specific Lambda functions. I created HTTP POST to implement the functionality involving data creation in DynamoDB and returning the response to the client.<br>The Lambda Proxy Integration is used to ensure network security and proxy controls. Plus, by using authorization header, requests were restricted to authenticated users by verifying their JWT tokens through the specific user pool(AWS Cognito).<br>After deploying the API Gateway, the generated Invoke URL was added to the 'api' property of the 'window._config' object in the 'config.js' file. When a request is sent, the web app checks "window._config['api']['invokeUrl']" to locate the API Gateway. Based on the HTTP method, API Gateway verifies the 'Authorization' header and authenticates the request using the "window._config['cognito']['userPoolId']". If the user is valid, the API Gateway forwards the request to the connected Lambda function for processing.</p>
+									<h2>Through this project,</h2>
+									<p>I learnt the comprehensive REST API architecture. I built a HTTP POST method to implement a suggested functionality. Considering its scalable and flexible RESTful design, I can extend the system further by implementing the HTTP GET method to retrieve specific unicorn requests and responses from DynamoDB based on UnicornID.</p>	
+									<p class="read"><a href="#">Thank you for your interest!</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-pb-sm">
+							<div class="row">
+								<div class="col-md-10">
+									<h2>Let's Talk</h2>
+									<p>Any thoughts, opinions,<br>or suggestions are welcome!<br><br>I'm HERE!</p>
+									<p><a href="mailto:youngandtom2@gmail.com">youngandtom2@gmail.com</a></p>
+									<p class="colorlib-social-icons">
+										<a href="https://github.com/MyDogTomsky"><i class="icon-github2"></i></a>&nbsp;
+										<a href="https://www.linkedin.com/in/soo-young-kwon-3045b026a/"><i class="icon-linkedin3"></i></a>&nbsp;
+										<a href="mailto:youngandtom2@gmail.com"><i class="icon-mail5"></i></a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-pb-sm">
+							<h2>Latest Work</h2>
+							<div class="f-entry">
+								<a href="#" class="featured-img" style="background-image: url(images/img-1.jpg);"></a>
+								<div class="desc">
+									<span>March, 2025</span>
+									<h3><a href="/work-single">Host this Website</a></h3>
+								</div>
+							</div>
+							<div class="f-entry">
+								<a href="#" class="featured-img" style="background-image: url(images/img-2.jpg);"></a>
+								<div class="desc">
+									<span> 2024 </span>
+									<h3><a href="/work-less">Build Server-less REST App</a></h3>
+									<!--h3><a href="/work-less" class = "gallery image-popup-link text-center">Build Server-less REST App</a></h3-->
+								</div>
+							</div>
+							<div class="f-entry">
+								<a href="#" class="featured-img" style="background-image: url(images/img-3.jpg);"></a>
+								<div class="desc">
+									<span> 2024 </span>
+									<h3><a href="{{ planning }}" class = "gallery image-popup-link text-center">Host LAMP Web App</a></h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-pb-sm">
+							<h2>Newsletter</h2>
+							<p>It will be updated.<br>Thank You!</p>
+							<div class="subscribe text-center">
+								<div class="form-group">
+									<input type="text" class="form-control text-center" placeholder="Enter Email address">
+									<input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p style="font-size: 10px; opacity: 0.5;">
+								&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> The template came from <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+	</div>
+
+	<!-- jQuery -->
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+	<!-- jQuery Easing -->
+	<script src="{{url_for('static', filename='js/jquery.easing.1.3.js')}}"></script>
+	<!-- Bootstrap -->
+	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+	<!-- Waypoints -->
+	<script src="{{url_for('static', filename='js/jquery.waypoints.min.js')}}"></script>
+	<!-- Owl Carousel -->
+	<script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+
+	<!-- Magnific Popup -->
+	<script src="{{url_for('static', filename = 'js/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{url_for('static', filename = 'js/magnific-popup-options.js')}}"></script>
+	
+	
+	<!-- Main JS (Do not remove) -->
+	<script src="{{url_for('static', filename='js/main.js')}}"></script>
+
+	</body>
+</html>
+

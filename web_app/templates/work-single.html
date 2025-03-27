@@ -3,51 +3,55 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Noah Template</title>
+	<title>Soo Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+	<meta name="description" content="This is SooYoung's Personal Website" />
+	<meta name="keywords" content="cloud project, engineer, sooyoung" />
+	<meta name="author" content="SooYoung" />
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
+  <!-- Github and Linkedin integration(facebook, twitter) -->
+	<meta property="og:title" content="Soo's Github REPO"/>
 	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+	<meta property="og:url" content="https://github.com/MyDogTomsky"/>
+	<meta property="og:site_name" content="GITHUB"/>
+	<meta property="og:description" content="LET'S LOOK AROUND CODES AND PROJECTS!"/>
+
+	<meta name="linkedin:title" content="Soo's LinkedIn" />
+	<meta name="linkedin:image" content="" />
+	<meta name="linkedin:url" content="https://www.linkedin.com/in/soo-young-kwon-3045b026a/" />
+	<meta name="linkedin:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+	<!--link rel="shortcut icon" href="favicon.ico"-->
+	<link rel="shortcut icon" href="/static/images/tommy-cuttos.png" type="image/png">
 
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 	
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css')}}">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/icomoon.css')}}">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css')}}">
 	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.default.min.css')}}">
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/magnific-popup.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="{{url_for('static', filename = 'js/modernizr-2.6.2.min.js')}}"></script>
+	<!--script src="{{url_for('static', filename = 'js/modernizr-2.6.2.min.js')}}"></script-->
+	<!--script src="js/modernizr-2.6.2.min.js"></script-->
+
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
 	</head>
 	<body>
 
@@ -66,28 +70,28 @@
 				<div class="row">
 					<div class="col-md-12">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="services.html">Services</a></li>
-							<li class="active"><a href="work.html">Work</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li class="active"><a href="/">Home</a></li>
+							<li><a href="{{ modifying }}">Skills</a></li>
+							<li><a href="/work-single">About This Website</a></li>
+							<li><a href="/work-less">About Serverless App</a></li>
+							<li><a href="{{ planning }}">Coming Soon</a></li>
+							<li><a href="#">Contact</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="head-title">Works</h2>
-						<a href="images/work-1.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-1.jpg);">
+						<h2 class="head-title">Projects</h2>
+						<a href="/static/images/web_diagram.png" class="gallery image-popup-link text-center" style="background-image: url(/static/images/code_blurred.png);">
 							<span><i class="icon-search3"></i></span>
 						</a>
-						<a href="images/work-2.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-2.jpg);">
+						<a href="/static/images/serverless-diagram.jpg" class="gallery image-popup-link text-center" style="background-image: url(/static/images/serverless_program.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a> 
+						<a href="{{ planning }}" class="gallery image-popup-link text-center" style="background-image: url(/static/images/lamp_program.jpg);">
 							<span><i class="icon-search3"></i></span>
 						</a>
-						<a href="images/work-3.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-3.jpg);">
-							<span><i class="icon-search3"></i></span>
-						</a>
-						<a href="images/work-4.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-4.jpg);">
+						<a href="/static/images/mobile_program.jpg" class="gallery image-popup-link text-center" style="background-image: url(/static/images/mobile-app.jpg);">
 							<span><i class="icon-search3"></i></span>
 						</a>
 					</div>
@@ -102,7 +106,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="colorlib-navbar-brand">
-							<a class="colorlib-logo" href="index.html"><span>No</span><span>ah</span></a>
+							<a class="colorlib-logo" href="/"><span>CIAO-!</span><span>^__^</span></a>
 						</div>
 						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 					</div>
@@ -112,34 +116,47 @@
 		<div id="colorlib-work">
 			<div class="container">
 				<div class="row text-center">
-					<h2 class="bold">Works</h2>
+					<h2 class="bold">Projects</h2>
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
 						<span>Portfolio</span>
-						<h2>Portfolio Single</h2>
+						<h2>About This Website</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="rotate">
-							<h2 class="heading">Portfolio</h2>
+							<h2 class="heading">System Design</h2>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-1.jpg);">
+							<a href="/work-single" class="work-img" style="background-image: url(/static/images/web_diagram.png);">
 							</a>
 							<div class="col-md-8 col-md-offset-2">
 								<div class="desc">
-									<h2>Pursuing Best</h2>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
-									<img class="img-responsive" src="images/work-2.jpg" alt="html5 bootstrap template by colorlib.com"><br>
-									<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-									<p class="read"><a href="#">Live Preview</a></p>
+									<h2>Automating CI/CD for My Website</h2>
+									<p>- DevOps Pipeline: Jenkins (CI/CD Automation), Docker, GitHub (Webhooks)<br>- Skills: AWS (Cloud), Terraform (IaC), Flask (Web Framework), Nginx (Network Proxy)<br></p>
+									<p>I have deployed and maintained this portfolio web application using cloud services and continuous integration/continuous deployment (CI/CD) automation tools.</p>
+									<p>With Terraform, I have created and managed infrastructure as code, including VPC, subnets, ALB, and EC2 instances, to manage cloud resources efficiently.</p>
+									<p>For the REST API architecture, I configured the security group settings (focusing on ingress with TCP) for EC2 and the load balancer. Additionally, the TLS certificate (for CNAME: HTTP [80] -> HTTPS [443]) was essential for securing the application.</p>
+									<p>Every time Bootstrap files are updated in my GitHub repository, Jenkins automatically detects the changes through Webhooks and executes a script to build the Docker image on EC2, then runs the container based on this image. The EC2 instance serves the web application using this container, with Flask managing the Bootstrap files and Nginx acting as a network proxy to connect the application to my domain via HTTP.<br></p>
+									<p>Using the Load Balancer's listeners and Route 53 records, I ensured that the domain could serve the application reliably, with a redirection from HTTP to HTTPS facilitated by the TLS certificate.<br>The health check for Flask and the Load Balancer was configured at the '/health' logical endpoint to ensure traffic stability while monitoring logs, ensuring proper HTTP traffic.</p>
+									<p>For a better user experience, I utilised CloudFront (CDN) to fetch static images from an S3 bucket, displaying the "coming soon" image without delay on unprepared web pages.</p>
+									<p>The Load Balancer logs are stored in S3, and CloudWatch is used to track the number of healthy hosts, enabling me to monitor and manage server status consistently. Additionally, I keep monitoring HTTP status codes in the Nginx access and error logs to ensure the stability of my web application.</p>
+
+									<img class="img-responsive" src="/static/images/weather-lambda-apigw.png" alt="weatherapi with API GATEWAY & AWS LAMBDA"><br>
+									<h2>Applications</h2>
+									<p>With AWS Lambda and API Gateway, I added serverless functionality to this website, following a REST API architecture. I selected three cities where I lived, currently live, and would like to travel again. I used the latitude and longitude of these cities to fetch data from weather API services.</p>
+									<p>I wrote code in Lambda to retrieve the minimum and maximum temperatures, along with a summary of today's weather from OpenWeatherMap. The URL requests are first checked for a successful response status code before converting to JSON. The JSON parsing and potential errors are handled within the except block to ensure proper error tracking.<br>To integrate Lambda with API Gateway, I created an HTTP GET method for the final endpoint, allowing the Flask application to call the API Gateway.</p>
+									<p>By using the API Gateway URL, the Flask application retrieves weather data from the weather API, providing today's weather details based on the API's JSON attributes.</p>
+									<p><br><br>- Currency API: Currently Working... <br></p>
+									<h2>With this project,</h2>
+									<p>My aim is to consistently add new functionalities, such as weather API, movie API, and some useful stuff :), while not only hosting the website but also developing and implementing cloud and DevOps skills.</p>
+									<p class="read"><a href="https://github.com/MyDogTomsky/soo_portfolio/tree/soo">Let's go to GitHub!</a></p>
 								</div>
 							</div>
 						</div>
@@ -156,44 +173,45 @@
 							<div class="row">
 								<div class="col-md-10">
 									<h2>Let's Talk</h2>
-									<p>A small river named Duden flows by their place and supplies.</p>
-									<p><a href="#">noah@info.com</a></p>
+									<p>Any thoughts, opinions,<br>or suggestions are welcome!<br><br>I'm HERE!</p>
+									<p><a href="mailto:youngandtom2@gmail.com">youngandtom2@gmail.com</a></p>
 									<p class="colorlib-social-icons">
-										<a href="#"><i class="icon-facebook4"></i></a>
-										<a href="#"><i class="icon-twitter3"></i></a>
-										<a href="#"><i class="icon-googleplus"></i></a>
-										<a href="#"><i class="icon-dribbble2"></i></a>
+										<a href="https://github.com/MyDogTomsky"><i class="icon-github2"></i></a>&nbsp;
+										<a href="https://www.linkedin.com/in/soo-young-kwon-3045b026a/"><i class="icon-linkedin3"></i></a>&nbsp;
+										<a href="mailto:youngandtom2@gmail.com"><i class="icon-mail5"></i></a>
 									</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 col-pb-sm">
-							<h2>Latest Blog</h2>
+							<h2>Latest Work</h2>
 							<div class="f-entry">
 								<a href="#" class="featured-img" style="background-image: url(images/img-1.jpg);"></a>
 								<div class="desc">
-									<span>February 15, 2018</span>
-									<h3><a href="#">Art Gallery in Japan</a></h3>
+									<span>March, 2025</span>
+									<h3><a href="/work-single">Host this Website</a></h3>
 								</div>
 							</div>
 							<div class="f-entry">
 								<a href="#" class="featured-img" style="background-image: url(images/img-2.jpg);"></a>
 								<div class="desc">
-									<span>February 9, 2018</span>
-									<h3><a href="#">A Japanese Constellation</a></h3>
+									<span> 2024 </span>
+									<h3><a href="/work-less">Build Server-less REST App</a></h3>
+									<!--h3><a href="/work-less" class = "gallery image-popup-link text-center">Build Server-less REST App</a></h3-->
+
 								</div>
 							</div>
 							<div class="f-entry">
 								<a href="#" class="featured-img" style="background-image: url(images/img-3.jpg);"></a>
 								<div class="desc">
-									<span>February 15, 2018</span>
-									<h3><a href="#">Road Trip</a></h3>
+									<span> 2024 </span>
+									<h3><a href="{{ planning }}" class = "gallery image-popup-link text-center">Host LAMP Web App</a></h3>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 col-pb-sm">
 							<h2>Newsletter</h2>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
+							<p>It will be updated.<br>Thank You!</p>
 							<div class="subscribe text-center">
 								<div class="form-group">
 									<input type="text" class="form-control text-center" placeholder="Enter Email address">
@@ -204,9 +222,9 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12 text-center">
-							<p>
+							<p style="font-size: 10px; opacity: 0.5;">
 								&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart4" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> The template came from <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 							</p>
 						</div>
@@ -218,21 +236,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</div>
 
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="{{url_for('static', filename='js/jquery.easing.1.3.js')}}"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="{{url_for('static', filename='js/jquery.waypoints.min.js')}}"></script>
 	<!-- Owl Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+	<script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
 
+	<!-- Magnific Popup -->
+	<script src="{{url_for('static', filename = 'js/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{url_for('static', filename = 'js/magnific-popup-options.js')}}"></script>
+	
+	
 	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
+	<script src="{{url_for('static', filename='js/main.js')}}"></script>
 
 	</body>
 </html>

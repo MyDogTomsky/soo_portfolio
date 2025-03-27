@@ -3,25 +3,26 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Noah Template</title>
+	<title>Soo Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+	<meta name="description" content="This is SooYoung's Personal Website" />
+	<meta name="keywords" content="cloud project, engineer, sooyoung" />
+	<meta name="author" content="SooYoung" />
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
+  <!-- Github and Linkedin integration(facebook, twitter) -->
+	<meta property="og:title" content="Soo's Github REPO"/>
 	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+	<meta property="og:url" content="https://github.com/MyDogTomsky"/>
+	<meta property="og:site_name" content="GITHUB"/>
+	<meta property="og:description" content="LET'S LOOK AROUND CODES AND PROJECTS!"/>
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="linkedin:title" content="Soo's LinkedIn" />
+	<meta name="linkedin:image" content="" />
+	<meta name="linkedin:url" content="https://www.linkedin.com/in/soo-young-kwon-3045b026a/" />
+	<meta name="linkedin:card" content="" />
+
+	<!-- ICON: Place favicon.ico and apple-touch-icon.png in the root directory --> 
+	<link rel="shortcut icon" href="/static/images/tommy-cuttos.png" type="image/png">
 
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
@@ -39,10 +40,12 @@
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="{{url_for('static', filename='css/magnific-popup.css')}}">
 	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
 	
 
 	<!-- Modernizr JS -->
 	<script src="{{url_for('static', filename = 'js/modernizr-2.6.2.min.js')}}"></script>
+	<!--script src="{{url_for('static', filename = 'js/modernizr-2.6.2.min.js')}}"></script-->
 	<!--script src="js/modernizr-2.6.2.min.js"></script-->
 
 	<!-- FOR IE9 below -->
@@ -68,28 +71,28 @@
 				<div class="row">
 					<div class="col-md-12">
 						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="services.html">Services</a></li>
-							<li><a href="work.html">Work</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li class="active"><a href="/">Home</a></li>
+							<li><a href="{{ modifying }}">Skills</a></li>
+							<li><a href="/work-single">About This Website</a></li>
+							<li><a href="/work-less">About Serverless App</a></li>
+							<li><a href="{{ planning }}">Coming Soon</a></li>
+							<li><a href="#">Contact</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="head-title">Works</h2>
-						<a href="images/work-1.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-1.jpg);">
+						<h2 class="head-title">Projects</h2>
+						<a href="/static/images/web_diagram.png" class="gallery image-popup-link text-center" style="background-image: url(/static/images/code_blurred.png);">
 							<span><i class="icon-search3"></i></span>
 						</a>
-						<a href="images/work-2.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-2.jpg);">
+						<a href="/static/images/serverless-diagram.jpg" class="gallery image-popup-link text-center" style="background-image: url(/static/images/serverless_program.jpg);">
 							<span><i class="icon-search3"></i></span>
 						</a>
-						<a href="images/work-3.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-3.jpg);">
+						<a href="{{ planning }}" class="gallery image-popup-link text-center" style="background-image: url(/static/images/lamp_program.jpg);">
 							<span><i class="icon-search3"></i></span>
 						</a>
-						<a href="images/work-4.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-4.jpg);">
+						<a href="/static/images/mobile_program.jpg" class="gallery image-popup-link text-center" style="background-image: url(/static/images/mobile-app.jpg);">
 							<span><i class="icon-search3"></i></span>
 						</a>
 					</div>
@@ -104,7 +107,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="colorlib-navbar-brand">
-							<a class="colorlib-logo" href="index.html"><span>No</span><span>ah</span></a>
+							<a class="colorlib-logo" href="/"><span>CIAO-!</span><span>^__^</span></a>
 						</div>
 						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 					</div>
@@ -120,10 +123,10 @@
 					<div class="col-md-5 animate-box">
 						<div class="owl-carousel3">
 							<div class="item">
-								<img class="img-responsive about-img" src="images/about.jpg" alt="html5 bootstrap template by colorlib.com">
+								<img class="img-responsive about-img" src="/static/images/soo-about-2.jpg" alt="404: Image Load Error">
 							</div>
 							<div class="item">
-								<img class="img-responsive about-img" src="images/about-2.jpg" alt="html5 bootstrap template by colorlib.com">
+								<img class="img-responsive about-img" src="/static/images/soo-seven.jpg" alt="404: Image Load Error">
 							</div>
 						</div>
 					</div>
@@ -131,24 +134,23 @@
 						<div class="about-desc">
 							<div class="owl-carousel3">
 								<div class="item">
-									<h2><span>Noah</span><span>Henderson</span></h2>
+									<h2><span>Soo</span><span>Young.K</span></h2>
 								</div>
 								<div class="item">
-									<h2><span>I'm</span><span>A Designer</span></h2>
+									<h2><span>I'm</span><span>Exploring</span></h2>
 								</div>
 							</div>
 							<div class="desc">
 								<div class="rotate">
-									<h2 class="heading">About</h2>
+									<h2 class="heading">HELLO</h2>
 								</div>
-								<p>A small river named Duden <a href="#">flows by their place</a> and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
+								<p>Welcome! This is my <a href="#"> Portfolio Web Page.</a><br>First of all, thank you for visiting!<br>Here, I introduce my professional work and share a bit about myself.<br>Hope you enjoy exploring my page!</p>
 								<p class="colorlib-social-icons">
-									<a href="#"><i class="icon-facebook4"></i></a>
-									<a href="#"><i class="icon-twitter3"></i></a>
-									<a href="#"><i class="icon-googleplus"></i></a>
-									<a href="#"><i class="icon-dribbble2"></i></a>
+									<a href="https://github.com/MyDogTomsky"><i class="icon-github2"></i></a>&nbsp;
+									<a href="https://www.linkedin.com/in/soo-young-kwon-3045b026a/"><i class="icon-linkedin3"></i></a>&nbsp;
+									<a href="mailto:youngandtom2@gmail.com"><i class="icon-mail5"></i></a>
 								</p>
-								<p><a href="#" class="btn btn-primary btn-outline">Contact Me!</a></p>
+								<p><a href="mailto:youngandtom2@gmail.com" class="btn btn-primary btn-outline">Contact Me!</a></p>
 							</div>
 						</div>
 					</div>
@@ -158,7 +160,8 @@
 		<div id="colorlib-services">
 			<div class="container">
 				<div class="row text-center">
-					<h2 class="bold">Services</h2>
+					<h2 class="bold">Skills</h2>
+					<!--h2 class="bold">Services</h2-->
 				</div>
 				<div class="row">
 					<div class="col-md-12">
@@ -166,59 +169,47 @@
 							<div class="one-third">
 								<div class="row">
 									<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
-										<span>My Services</span>
-										<h2>Here Are Some of My Skills</h2>
+										<span>My Skills</span>
+										<h2>What Can I Bring...!</h2>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-12">
 										<div class="rotate">
-											<h2 class="heading">Services</h2>
+											<h2 class="heading">Skills</h2>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="services animate-box">
-											<h3>1 - Graphic Design</h3>
+											<h3>1 - Programming</h3>
 											<ul>
-												<li>UI Design</li>
-												<li>Website &amp; Digital Design</li>
-												<li>Brading &amp; Visual Identity</li>
-												<li>Print Design</li>
+												<li>Python</li>
 											</ul>
 										</div>
 										<div class="services animate-box">
-											<h3>3 - Front End Development</h3>
+											<h3>3 - DevOps & Etc</h3>
 											<ul>
-												<li>HTML / CSS</li>
-												<li>JS &amp; Jquery Startup</li>
-												<li>WordPress</li>
-												<li>Jomla</li>
+												<li>Docker</li>
+												<li>Jenkins</li>
+												<li>Git: GitHub</li>
+												<li>SQL: MySQL</li>
+
 											</ul>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="services animate-box">
-											<h3>2 - Illustration</h3>
+											<h3>2 - Cloud & Infrastructure</h3>
 											<ul>
-												<li>Editorial</li>
-												<li>Narrative</li>
-												<li>Motion Graphics</li>
-												<li>Animation</li>
-												<li>Visual Effects</li>
-											</ul>
-										</div>
-										<div class="services animate-box">
-											<h3>4 - Web Marketing</h3>
-											<ul>
-												<li>Sales Marketing</li>
-												<li>Invoice</li>
-												<li>eCommerce</li>
+												<li>Terraform</li>
+												<li>Cloud Service: AWS</li>
+												<li>Linux</li>
 											</ul>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="one-forth services-img" style="background-image: url(images/services-img-1.jpg);">
+							<div class="one-forth services-img" style="background-image: url(/static/images/soo-skills-com.jpg);">
 							</div>
 						</div>
 					</div>
@@ -229,12 +220,12 @@
 		<div id="colorlib-work">
 			<div class="container">
 				<div class="row text-center">
-					<h2 class="bold">Works</h2>
+					<h2 class="bold">Projects</h2>
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
 						<span>Portfolio</span>
-						<h2>Done Projects</h2>
+						<h2>What Did I So Far..?</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -247,68 +238,72 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-1.jpg);">
+							<a href="/work-single" class="work-img" style="background-image: url(/static/images/code_blurred.png);">
 								<div class="display-t">
 									<div class="work-name">
-										<h2>Pursuing Best</h2>
+										<h2>Host This Website</h2>
 									</div>
 								</div>
 							</a>
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View details</a></p>
+									<p>I built a <b>CI/CD pipeline</b> using <b>Jenkins, Docker, and GitHub</b> Webhooks to deploy this website. It runs on <b>AWS</b>, with <b>Terraform</b> managing infrastructure and <b>Flask</b> as the web framework. I integrated a <b>serverless</b> Weather API using <b>AWS Lambda & API Gateway</b> to retrieve live weather updates.<br>More <b>Features</b> will be <b>ADDED</b> over time!</p>
+									<p class="read"><a href="/work-single">View details</a></p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-2.jpg);">
+							<a href="/work-less" class="work-img" style="background-image: url(/static/images/serverless_program.jpg);">
+							<!--a href="{{ planning }}" class="work-img" style="background-image: url(/static/images/serverless_program.jpg);"-->
+
 								<div class="display-t">
 									<div class="work-name">
-										<h2>Coordinates</h2>
+										<h2>Build Server-less App</h2>
 									</div>
 								</div>
 							</a>
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View Details</a></p>
+									<p>I implemented a <b>serverless web</b> application with a <b>REST API architecture</b> that processes requests using <b>AWS Lambda & API Gateway</b>, stores data in <b>DynamoDB</b>, and secures <b>user authentication</b> with AWS Cognito.</p>
+									<p class="read"><a href="/work-less" class = "gallery image-popup-link text-center" >View Details</a></p>
+									<!--p class="read"><a href="{{ planning }}" class = "gallery image-popup-link text-center" >View Details</a></p-->
+
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-3.jpg);">
+							<a href="{{ planning }}" class="work-img" style="background-image: url(/static/images/lamp_program.jpg);">
 								<div class="display-t">
 									<div class="work-name">
-										<h2>Cristall</h2>
+										<h2>Host LAMP Web App</h2>
 									</div>
 								</div>
 							</a>
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View details</a></p>
+									<p>I hosted an e-commerce website using the <b>LAMP architecture</b> on <b>AWS</b> & leveraging <b>Terraform</b> for resource and network management.<br><b>[1] Infrastructure as Code</b>: Terraform<br><b>[2] AWS Cloud Services</b>: EC2 (with ASG), S3, RDS (DB migration via Flyway), & Route53<br><b>[3] Proxy Server</b>: Configured with Apache</p>
+									<p class="read"><a href="{{ planning }}" class = "gallery image-popup-link text-center" >View details</a></p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-4.jpg);">
+							<a href="{{ planning }}"  class="work-img" style="background-image: url(/static/images/mobile-app.jpg);">
 								<div class="display-t">
 									<div class="work-name">
-										<h2>Black</h2>
+										<h2>Python Mobile App</h2>
 									</div>
 								</div>
 							</a>
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View details</a></p>
+									<p>It's a <b>food recommendation mobile application</b>. The app is divided into Western and Oriental cuisines.<br>It also offers a <b>filtering system</b> to exclude disliked or allergenic ingredients for users. It fetches a recommended list that includes starters, mains, and desserts.<br>Through a <b>keyword search function</b>, users can see the image of the food. Additionally, users can send feedback through the review & claim section, which is implemented using <b>SMTP</b>.</p>
+									<p class="read"><a href="{{ planning }}" class = "gallery image-popup-link text-center" > View details</a></p>
 								</div>
 							</div>
 						</div>
@@ -320,18 +315,18 @@
 		<div id="colorlib-blog">
 			<div class="container">
 				<div class="row text-center">
-					<h2 class="bold">Blog</h2>
+					<h2 class="bold">Weather</h2>
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-						<span>Blog</span>
-						<h2>Read Our Case</h2>
+						<span>Today's</span>
+						<h2>WORLD WEATHER</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="rotate">
-							<h2 class="heading">Our Blog</h2>
+							<h2 class="heading">Go Globe</h2>
 						</div>
 					</div>
 				</div>
@@ -340,17 +335,19 @@
 						<div class="item">
 							<div class="col-md-12">
 								<div class="article">
-									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/img-1.jpg" alt="html5 bootstrap by colorlib.com">
+									<a href="#" class="blog-img">
+										<img class="img-responsive" src="/static/images/london.jpg" alt="How's London weather like today?">
 										<div class="overlay"></div>
 										<div class="link">
-											<span class="read">Read more</h2>
+											<span class="read">Go LONDON!</h2>
 										</div>
 									</a>
 									<div class="desc">
-										<span class="meta">15, Feb 2018</span>
-										<h2><a href="blog.html">A Japanese Constellation</a></h2>
-										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+										<span class="meta">{{ date["Europe/London"] }}</span>
+										<h2><a href="#">LONDON Now <i class="icon-thermometer2"></i><span style="color: #B76DF7; font-size: 26px; font-weight: bold;">&nbsp;{{ weather["london"]["cur_temp"] }}°C</span></a></h2>
+										<p><i class="icon-stats-bars"></i><span style= "font-weight: bold;">&nbsp;Lo & Hi:</span>&nbsp;<span style="font-weight: bold; font-size: 16px;">&nbsp;&nbsp;{{ weather["london"]["min_temp"]}}°C & {{ weather["london"]["max_temp"]}}°C</span><br></p>
+										<p><i class="icon-search5"></i><span style= "font-weight: bold;">&nbsp;TODAY,<br>&nbsp;&nbsp;</span> {{ weather["london"]["it_is"]}}</p>
+
 									</div>
 								</div>
 							</div>
@@ -359,16 +356,19 @@
 							<div class="col-md-12">
 								<div class="article">
 									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/img-2.jpg" alt="html5 bootstrap by colorlib.com">
+										<img class="img-responsive" src="/static/images/busan.jpg" alt="How's Busan weather like?">
 										<div class="overlay"></div>
 										<div class="link">
-											<span class="read">Read more</h2>
+											<span class="read">Go BUSAN!</h2>
 										</div>
 									</a>
 									<div class="desc">
-										<span class="meta">15, Feb 2018</span>
-										<h2><a href="blog.html">A Japanese Constellation</a></h2>
-										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+										<span class="meta">{{ date["Asia/Seoul"] }}</span>
+										<h2><a href="#">BUSAN Now <i class="icon-thermometer2"></i><span style="color: #B76DF7; font-size: 26px; font-weight: bold;">&nbsp;{{ weather["busan"]["cur_temp"] }}°C</span></a></h2>
+										<!--h2><a href="#">BUSAN Now <span style="color: #B76DF7; font-weight: bold;">{{ weather["busan"]["cur_temp"] }}°C</span></a></h2-->
+										<p><i class="icon-stats-bars"></i><span style= "font-weight: bold;">&nbsp;Lo & Hi:</span>&nbsp;<span style="font-weight: bold; font-size: 16px;">&nbsp;&nbsp;{{ weather["busan"]["min_temp"]}}°C & {{ weather["busan"]["max_temp"]}}°C</span><br></p>
+										<p><i class="icon-search5"></i><span style= "font-weight: bold;">&nbsp;TODAY,<br>&nbsp;&nbsp;</span> {{ weather["busan"]["it_is"]}}</p>
+	
 									</div>
 								</div>
 							</div>
@@ -377,16 +377,18 @@
 							<div class="col-md-12">
 								<div class="article">
 									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/img-3.jpg" alt="html5 bootstrap by colorlib.com">
+										<img class="img-responsive" src="/static/images/roma.jpg" alt="How's Roma weather like today?">
 										<div class="overlay"></div>
 										<div class="link">
-											<span class="read">Read more</h2>
+											<span class="read">Go ROMA!</h2>
 										</div>
 									</a>
 									<div class="desc">
-										<span class="meta">15, Feb 2018</span>
-										<h2><a href="blog.html">A Japanese Constellation</a></h2>
-										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+										<span class="meta">{{ date["Europe/Rome"] }}</span>
+										
+										<h2><a href="#">ROMA Now <i class="icon-thermometer2"></i><span style="color: #B76DF7; font-size: 26px; font-weight: bold;">&nbsp;{{ weather["roma"]["cur_temp"] }}°C</span></a></h2>
+										<p><i class="icon-stats-bars"></i><span style= "font-weight: bold;">&nbsp;Lo & Hi:</span>&nbsp;<span style="font-weight: bold; font-size: 16px;">&nbsp;&nbsp;{{ weather["roma"]["min_temp"]}}°C & {{ weather["roma"]["max_temp"]}}°C</span><br></p>
+										<p><i class="icon-search5"></i><span style= "font-weight: bold;">&nbsp;TODAY,<br>&nbsp;&nbsp;</span> {{ weather["roma"]["it_is"]}}</p>
 									</div>
 								</div>
 							</div>
@@ -396,15 +398,15 @@
 			</div>
 		</div>
 
-		<div id="colorlib-testimony">
+		<!--div id="colorlib-testimony">
 			<div class="container">
 				<div class="row text-center">
-					<h2 class="bold">Testimonies</h2>
+					<h2 class="bold">Quotes</h2>
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-						<span>Testimonies</span>
-						<h2>Clients Says</h2>
+						<span>Quotes</span>
+						<h2>This Week's Quote</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -449,7 +451,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div-->
 
 		<footer>
 			<div id="footer">
@@ -459,44 +461,44 @@
 							<div class="row">
 								<div class="col-md-10">
 									<h2>Let's Talk</h2>
-									<p>A small river named Duden flows by their place and supplies.</p>
-									<p><a href="#">noah@info.com</a></p>
+									<p>Any thoughts, opinions,<br>or suggestions are welcome!<br><br>I'm HERE!</p>
+									<p><a href="mailto:youngandtom2@gmail.com">youngandtom2@gmail.com</a></p>
 									<p class="colorlib-social-icons">
-										<a href="#"><i class="icon-facebook4"></i></a>
-										<a href="#"><i class="icon-twitter3"></i></a>
-										<a href="#"><i class="icon-googleplus"></i></a>
-										<a href="#"><i class="icon-dribbble2"></i></a>
+										<a href="https://github.com/MyDogTomsky"><i class="icon-github2"></i></a>&nbsp;
+										<a href="https://www.linkedin.com/in/soo-young-kwon-3045b026a/"><i class="icon-linkedin3"></i></a>&nbsp;
+										<a href="mailto:youngandtom2@gmail.com"><i class="icon-mail5"></i></a>
 									</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 col-pb-sm">
-							<h2>Latest Blog</h2>
+							<h2>Latest Work</h2>
 							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/img-1.jpg);"></a>
+								<a href="/work-single" class="featured-img" style="background-image: url(/static/images/img-1.jpg);"></a>
 								<div class="desc">
-									<span>February 15, 2018</span>
-									<h3><a href="#">Art Gallery in Japan</a></h3>
+									<span>March, 2025</span>
+									<h3><a href="/work-single">Host this Website</a></h3>
 								</div>
 							</div>
 							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/img-2.jpg);"></a>
+								<a href="#" class="featured-img" style="background-image: url(/static/images/img-2.jpg);"></a>
 								<div class="desc">
-									<span>February 9, 2018</span>
-									<h3><a href="#">A Japanese Constellation</a></h3>
+									<span> 2024 </span>
+									<h3><a href="/work-less">Build Server-less REST App</a></h3>
+									<!--h3><a href="/work-less" class = "gallery image-popup-link text-center">Build Server-less REST App</a></h3-->
 								</div>
 							</div>
 							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/img-3.jpg);"></a>
+								<a href="#" class="featured-img" style="background-image: url(/static/images/img-3.jpg);"></a>
 								<div class="desc">
-									<span>February 15, 2018</span>
-									<h3><a href="#">Road Trip</a></h3>
+									<span> 2024 </span>
+									<h3><a href="{{ planning }}" class = "gallery image-popup-link text-center">Host LAMP Web App</a></h3>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 col-pb-sm">
 							<h2>Newsletter</h2>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
+							<p>It will be updated.<br>Thank You!</p>
 							<div class="subscribe text-center">
 								<div class="form-group">
 									<input type="text" class="form-control text-center" placeholder="Enter Email address">
@@ -507,9 +509,9 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12 text-center">
-							<p>
+							<p style="font-size: 10px; opacity: 0.5;">
 								&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart4" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> The template came from <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 							</p>
 						</div>

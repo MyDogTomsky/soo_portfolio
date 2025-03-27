@@ -1,0 +1,23 @@
+### WEB APP[soo_portfolio] RESOURCE & NETWORK!
+
+# 0-0) Route53: REGISTER Domain
+# 0-1) IAM ROLE
+# 0-2) ACM: TLS/SSL
+
+# 1) VPC    2) IGW  3) 2 OF subnet(HighAvailability)
+# 4) Route_table    5) rt_association[subnet, rt]
+# 6) 2 of security group: LB, WEBSERVER, 
+# 7) sg_ingressrule[WEBSERVER:SSH]   8) sg_egressrule[WEBSERVER]
+# 9) sg_ingressrule[WEBSERVER_HTTP] 
+#10) sg_ingressrule[WEBSERVER_HTTPS]
+#11) sg_ingressrule[LB_HTTP]        12) sg_egressrule[LB]
+#13) sg_ingressrule[LB_HTTPS]
+#14) aws_key_pair[SSH]  ====>       15) aws_instance
+#16) aws_s3_bucket                  17) aws_s3_bucket_policy
+#18) aws_lb_target_group            19) aws_lb
+#20) aws_lb_listener[HTTPS:ALB]     21) aws_lb_listener[HTTP:HTTPS]
+#22) aws_rt53_record[a-alias]
+#23) SSH configuration  & Access Key      
+
+# Exclusion: ASG / NAT GATEWAY / RDS
+# Plan to UPdate: DynamoDB, CloudWatch, CNAME with CloudFront
