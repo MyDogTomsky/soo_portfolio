@@ -1,5 +1,5 @@
 # Flask SETUP for A bootstrap file
-from flask import Flask, render_template
+from flask import Flask, render_template,request,jsonify
 from collections import defaultdict
 import requests
 from datetime import datetime
@@ -57,6 +57,25 @@ def work_less():
     #return "work-less is working!!!"
     return render_template('work-less.html', modifying = modify_part, planning = plan_part)
 
+# 'work.html'
+@app.route('/work')
+def work():
+    return render_template('work.html')
+
+# ALB: Target Group Health Check 
+@app.route('/health', methods=["GET","POST"])
+def health():
+    if request.method == "POST":
+        return jsonify({"status": "healthy", "message": "Resource is Created"}), 201
+    elif request.method == "GET":
+        return jsonify({"status": "healthy", "message": "Data is retrieved"}), 200
+
+
+# execute Flask app
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=False)
+
+'''    
 # 'about.html'
 @app.route('/about')
 def about():
@@ -82,17 +101,9 @@ def services():
 def single():
     return render_template('single.html')
 
-# 'work.html'
-@app.route('/work')
-def work():
-    return render_template('work.html')
 
 
-# ALB: Target Group Health Check 
-@app.route("/health")
-def health():
-    return "OK", 200
-
-# execute Flask app
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=False)
+#@app.route("/health")
+#def health():
+#    return "OK", 200
+'''
