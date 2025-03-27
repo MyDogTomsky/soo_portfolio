@@ -150,12 +150,10 @@
 
 									<img class="img-responsive" src="/static/images/weather-lambda-apigw.png" alt="weatherapi with API GATEWAY & AWS LAMBDA"><br>
 									<h2>Applications</h2>
-									<p>With AWS Lambda and API Gateway, I added serverless functionality to this website, following a REST API architecture.</p>
-									<p>I selected three cities where I lived, currently live, and would like to travel again. I used the latitude and longitude of these cities to fetch data from weather API services.</p>
-									<p>I wrote code in Lambda to retrieve the minimum and maximum temperatures, along with a summary of today's weather from OpenWeatherMap. The URL requests are first checked for a successful response status code before converting to JSON.</p>
-									<p>The JSON parsing and potential errors are handled within the except block to ensure proper error tracking.<br>To integrate Lambda with API Gateway, I created an HTTP GET method for the final endpoint, allowing the Flask application to call the API Gateway.</p>
+									<p>With AWS Lambda and API Gateway, I added serverless functionality to this website, following a REST API architecture. I selected three cities where I lived, currently live, and would like to travel again. I used the latitude and longitude of these cities to fetch data from weather API services.</p>
+									<p>I wrote code in Lambda to retrieve the minimum and maximum temperatures, along with a summary of today's weather from OpenWeatherMap. The URL requests are first checked for a successful response status code before converting to JSON. The JSON parsing and potential errors are handled within the except block to ensure proper error tracking.<br>To integrate Lambda with API Gateway, I created an HTTP GET method for the final endpoint, allowing the Flask application to call the API Gateway.</p>
 									<p>By using the API Gateway URL, the Flask application retrieves weather data from the weather API, providing today's weather details based on the API's JSON attributes.</p>
-									<p><br><br>- Currency API: Currently Working...</p>
+									<p><br><br>- Currency API: Currently Working... <br></p>
 									<h2>With this project,</h2>
 									<p>My aim is to consistently add new functionalities, such as weather API, movie API, and some useful stuff :), while not only hosting the website but also developing and implementing cloud and DevOps skills.</p>
 									<p class="read"><a href="https://github.com/MyDogTomsky/soo_portfolio/tree/soo">Let's go to GitHub!</a></p>
