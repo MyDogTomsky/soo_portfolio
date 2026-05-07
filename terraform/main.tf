@@ -120,6 +120,14 @@ resource "aws_security_group" "sg_soo_web" {
   }
 }
 
+resource "aws_vpc_security_group_ingress_rule" "web_icmp" {
+  security_group_id = aws_security_group.sg_soo_web.id
+  cidr_ipv4         = var.only_local_ip
+  from_port         = 8       # Type 8: Echo Request
+  ip_protocol       = "icmp"
+  to_port           = 0       # Type 0: Echo Reply
+}
+
 resource "aws_vpc_security_group_ingress_rule" "web_in_ssh" {
   security_group_id = aws_security_group.sg_soo_web.id
   cidr_ipv4         = var.out_all_traffic

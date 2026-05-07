@@ -1,14 +1,15 @@
 # Base: Python
 FROM python:3.9-slim
 
+# Install htop (for monitoring purposes)# 4/10
+RUN apt-get update && apt-get install -y htop
+
 # CONFIGURATION
 WORKDIR /app
 COPY requirements.txt .
 
 # PACKAGE INSTALL
 RUN pip install --no-cache-dir -r requirements.txt
-
-## zappa : init -> deploy -> update for LAMBDA
 
 # ENV MOVE TO WORKDIR
 COPY web_app /app
